@@ -2,8 +2,8 @@ package ch02;
 
 public class VIPCustomer extends Customer {
 	
-	double salesRatio;	// ÇÒÀÎ ºñÀ²
-	private int agentID;		// ´ã´ç »ó´ã¿ø id
+	double salesRatio;	// Ã‡Ã’Ã€ÃŽ ÂºÃ±Ã€Â²
+	private int agentID;		// Â´Ã£Â´Ã§ Â»Ã³Â´Ã£Â¿Ã¸ id
 	
 	public VIPCustomer() {
 		bonusRatio = 0.05;
