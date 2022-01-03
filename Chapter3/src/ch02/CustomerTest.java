@@ -5,13 +5,13 @@ public class CustomerTest {
 	public static void main(String[] args) {
 		
 		Customer customerLee = new Customer();
-		customerLee.setCustomerName("ÀÌ¼ø½Å");
+		customerLee.setCustomerName("Å”ÄšÅºÅ™ËÄ¹");
 		customerLee.setCustomerID(10010);
 		customerLee.bonusPoint = 1000;
 		System.out.println(customerLee.showCustomerInfo());
 		
 		VIPCustomer customerKim = new VIPCustomer();
-		customerKim.setCustomerName("±èÀ¯½Å");
+		customerKim.setCustomerName("Ä…ÄÅ”Å»ËÄ¹");
 		customerKim.setCustomerID(10020);
 		customerKim.bonusPoint = 10000;
 		System.out.println(customerKim.showCustomerInfo());
