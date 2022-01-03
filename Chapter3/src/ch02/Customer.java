@@ -1,13 +1,13 @@
 package ch02;
-// ÀÏ¹İ °í°´
+// ì¼ë°˜ ê³ ê°
 public class Customer {
-	// protected: ÇÏÀ§ Å¬·¡½º¿¡¼­´Â Á¢±ÙÀÌ °¡´ÉÇÏÁö¸¸, ¿ÜºÎ Å¬·¡½º¿¡¼­´Â Á¢±Ù ºÒ°¡.
-	// privateÀ¸·Î ÇÒ °æ¿ì ¿À·ù -> ÇÏÀ§ Å¬·¡½º¿¡¼­ Á¢±Ù ºÒ°¡.
+	// protected: í•˜ìœ„ í´ë˜ìŠ¤ì—ì„œëŠ” ì ‘ê·¼ì´ ê°€ëŠ¥í•˜ì§€ë§Œ, ì™¸ë¶€ í´ë˜ìŠ¤ì—ì„œëŠ” ì ‘ê·¼ ë¶ˆê°€.
+	// privateìœ¼ë¡œ í•  ê²½ìš° ì˜¤ë¥˜ -> í•˜ìœ„ í´ë˜ìŠ¤ì—ì„œ ì ‘ê·¼ ë¶ˆê°€.
 	protected int customerID;
 	protected String customerName;
 	protected String customerGrade;
-	int bonusPoint;		// Æ÷ÀÎÆ®
-	double bonusRatio;	// Æ÷ÀÎÆ® Àû¸³ ºñÀ²
+	int bonusPoint;		// í¬ì¸íŠ¸
+	double bonusRatio;	// í¬ì¸íŠ¸ ì ë¦½ ë¹„ìœ¨
 	
 	public Customer() {
 		customerGrade = "SILVER";
@@ -44,6 +44,6 @@ public class Customer {
 	}
 	
 	public String showCustomerInfo() {
-		return customerName + "´ÔÀÇ µî±ŞÀº " + customerGrade + "ÀÌ¸ç, º¸³Ê½º Æ÷ÀÎÆ®´Â " + bonusPoint + "ÀÔ´Ï´Ù.";
+		return customerName + "ë‹˜ì˜ ë“±ê¸‰ì€ " + customerGrade + "ì´ë©°, ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ëŠ” " + bonusPoint + "ì…ë‹ˆë‹¤.";
 	}
 }
