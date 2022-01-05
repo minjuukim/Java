@@ -33,7 +33,7 @@ public class MyArrayStack {
 			System.out.println("stack is empty");
 			return MyArray.ERROR_NUM;
 		}
-		return arrayStack.removeElement(--top);	// °¨¼ÒÇØ¼­ °ªÀ» ÁÜ.
+		return arrayStack.removeElement(--top);	// ê°ì†Œí•´ì„œ ê°’ì„ ì¤Œ.
 	}
 	
 	public int peek() {
@@ -49,7 +49,7 @@ public class MyArrayStack {
 		return top;
 	}
 	
-	// ¹è¿­·Î ±¸ÇöÇÒ °æ¿ì ¹è¿­ÀÌ ²Ë Ã¡´ÂÁö È®ÀÎÇØÁà¾ß ÇÔ.
+	// ë°°ì—´ë¡œ êµ¬í˜„í•  ê²½ìš° ë°°ì—´ì´ ê½‰ ì°¼ëŠ”ì§€ í™•ì¸í•´ì¤˜ì•¼ í•¨.
 	public boolean isFull() {
 		if( top == arrayStack.ARRAY_SIZE ) {
 			return true;
