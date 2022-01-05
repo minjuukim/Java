@@ -13,14 +13,14 @@ public class MyLinkedList {
 	public MyListNode addElement( String data) {
 		MyListNode newNode;
 		
-		if( head == null) {	// ¸Ç Ã³À½ÀÏ¶§
+		if( head == null) {	// ë§¨ ì²˜ìŒì¼ë•Œ
 			newNode = new MyListNode(data);
 			head = newNode;
 		}
 		else {
 			newNode = new MyListNode(data);
 			MyListNode temp = head;
-			while( temp.next != null ) {	// ¸¶Áö¸· ³ëµå Ã£±â
+			while( temp.next != null ) {	// ë§ˆì§€ë§‰ ë…¸ë“œ ì°¾ê¸°
 				temp = temp.next;
 			}
 			temp.next = newNode;
@@ -37,16 +37,16 @@ public class MyLinkedList {
 		MyListNode newNode = new MyListNode(data);
 		
 		if( position < 0 || position > count) {
-			System.out.println("Ãß°¡ÇÒ À§Ä¡ ¿À·ùÀÔ´Ï´Ù. ÇöÀç ¸®½ºÆ®ÀÇ °³¼ö´Â " +count + "°³ ÀÔ´Ï´Ù.");
+			System.out.println("ì¶”ê°€í•  ìœ„ì¹˜ ì˜¤ë¥˜ì…ë‹ˆë‹¤. í˜„ì¬ ë¦¬ìŠ¤íŠ¸ì˜ ê°œìˆ˜ëŠ” " +count + "ê°œ ì…ë‹ˆë‹¤.");
 			return null;
 		}
 		
-		if( position == 0) {	// ¸Ç ¾Õ¿¡ »ğÀÔµÉ¶§
+		if( position == 0) {	// ë§¨ ì•ì— ì‚½ì…ë ë•Œ
 			newNode.next = head;
 			head = newNode;
 		}
 		else {
-			for( i=0; i<position; i++) {	// »ğÀÔÇÒ positionÀÇ preNode Ã£±â
+			for( i=0; i<position; i++) {	// ì‚½ì…í•  positionì˜ preNode ì°¾ê¸°
 				preNode = tempNode;
 				tempNode = tempNode.next;
 			}
@@ -66,7 +66,7 @@ public class MyLinkedList {
 		MyListNode tempNode = head;
 		MyListNode preNode = null;
 		
-		if( position == 0) {	// ¸Ç ¾ÕÀ» »èÁ¦ÇÏ´Â °æ¿ì
+		if( position == 0) {	// ë§¨ ì•ì„ ì‚­ì œí•˜ëŠ” ê²½ìš°
 			head = tempNode.next;
 		}
 		else {
@@ -87,11 +87,11 @@ public class MyLinkedList {
 		MyListNode tempNode = head;
 		
 		if(position >= count ){
-			System.out.println("°Ë»ö À§Ä¡ ¿À·ù ÀÔ´Ï´Ù. ÇöÀç ¸®½ºÆ®ÀÇ °³¼ö´Â " + count +"°³ ÀÔ´Ï´Ù.");
+			System.out.println("ê²€ìƒ‰ ìœ„ì¹˜ ì˜¤ë¥˜ ì…ë‹ˆë‹¤. í˜„ì¬ ë¦¬ìŠ¤íŠ¸ì˜ ê°œìˆ˜ëŠ” " + count +"ê°œ ì…ë‹ˆë‹¤.");
 			return new String("error");
 		}
 		
-		if(position == 0){  //¸Ç ÀÎ °æ¿ì
+		if(position == 0){  //ë§¨ ì¸ ê²½ìš°
 
 			return head.getData();
 		}
@@ -109,11 +109,11 @@ public class MyLinkedList {
 		MyListNode tempNode = head;
 		
 		if(position >= count ){
-			System.out.println("°Ë»ö À§Ä¡ ¿À·ù ÀÔ´Ï´Ù. ÇöÀç ¸®½ºÆ®ÀÇ °³¼ö´Â " + count +"°³ ÀÔ´Ï´Ù.");
+			System.out.println("ê²€ìƒ‰ ìœ„ì¹˜ ì˜¤ë¥˜ ì…ë‹ˆë‹¤. í˜„ì¬ ë¦¬ìŠ¤íŠ¸ì˜ ê°œìˆ˜ëŠ” " + count +"ê°œ ì…ë‹ˆë‹¤.");
 			return null;
 		}
 		
-		if(position == 0){  //¸Ç ÀÎ °æ¿ì
+		if(position == 0){  //ë§¨ ì¸ ê²½ìš°
 
 			return head;
 		}
@@ -140,7 +140,7 @@ public class MyLinkedList {
 	public void printAll()
 	{
 		if(count == 0){
-			System.out.println("Ãâ·ÂÇÒ ³»¿ëÀÌ ¾ø½À´Ï´Ù.");
+			System.out.println("ì¶œë ¥í•  ë‚´ìš©ì´ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
 		
