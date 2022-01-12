@@ -23,7 +23,7 @@ public class MyLinkedQueue extends MyLinkedList implements Queue {
 	public void enQueue(String data) {
 		
 		MyListNode newNode;
-		if( isEmpty() ) {	// Ã³À½ Ç×¸ñ
+		if( isEmpty() ) {	// ÃƒÂ³Ã€Â½ Ã‡Ã—Â¸Ã±
 			newNode = addElement(data);
 			front = newNode;
 			rear = newNode;
@@ -46,7 +46,7 @@ public class MyLinkedQueue extends MyLinkedList implements Queue {
 		String data = front.getData();
 		front = front.next;
 		
-		if( front == null) {	// ¸¶Áö¸· Ç×¸ñ
+		if( front == null) {	// Â¸Â¶ÃÃ¶Â¸Â· Ã‡Ã—Â¸Ã±
 			rear = null;
 		}
 		
